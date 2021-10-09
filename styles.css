@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 500px;
+}
+
+.text {
+  width: 600px;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  color: #f59b51;
+  margin-bottom: 1rem;
+}
+
+h2,
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #595959;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.e-mail:before {
+  content: attr(data-website) "\0040"attr(data-user);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+@media only screen and (max-width: 600px) {
+  .block {
+    width: min(90vw, 90vh);
+    padding: 0;
+  }
+}
